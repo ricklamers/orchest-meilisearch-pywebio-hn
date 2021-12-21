@@ -25,4 +25,4 @@ On `Load into Meili` you can configure:
 }
 ```
 
-<center><a href="https://www.tella.tv/video/ckxgcilet007w09ia0kei2z0z/view"><img width="635" alt="image" src="https://user-images.githubusercontent.com/1309307/146968936-e3fc8f7b-9067-4145-a59-fb4575f5477f.png"></a></center>
+<center><a href="https://www.tella.tv/video/ckxgcilet007w09ia0kei2z0z/view"><img width="634" alt="image" src="https://user-images.githubusercontent.com/1309307/146969144-77cf54e9-8a9c-4d02-9f95-c49bb1d10eb0.png"></a></center>
