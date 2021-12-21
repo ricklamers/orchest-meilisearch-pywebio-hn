@@ -1,4 +1,3 @@
-# A simple script to calculate BMI
 import pywebio
 import requests
 import orchest
