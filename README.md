@@ -4,7 +4,7 @@ Search HN user comments through a PyWebIO interface backed by a Meilisearch DB
 
 ![Fetch HN and load into Meili pipeline](https://pviz.orchest.io/?pipeline=https://github.com/ricklamers/orchest-meilisearch-pywebio-hn/blob/master/load_and_search.orchest)
 
-Import `https://github.com/ricklamers/orchest-meilisearch-pywebio-hn` to your Orchest instance to try it out.
+Import `https://github.com/ricklamers/orchest-meilisearch-pywebio-hn` to your Orchest (if you don't know what that is, check it out here [github.com/orchest/orchest](https://github.com/orchest/orchest)) instance to try it out.
 
 On `Fetch data` you can configure:
 
