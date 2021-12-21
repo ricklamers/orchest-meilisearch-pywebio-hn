@@ -1,0 +1,1 @@
+{"name": "PyWebIO", "base_image": "python:3.8", "language": "python", "uuid": "36898f9e-456a-4259-a6d5-685bda2ba2cd", "gpu_support": false}

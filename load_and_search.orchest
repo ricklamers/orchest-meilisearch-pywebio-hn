@@ -1,0 +1,89 @@
+{
+    "name": "Load and search",
+    "parameters": {},
+    "services": {
+        "PyWebIO": {
+            "binds": {
+                "/project-dir": "/usr/src/app"
+            },
+            "command": "-c \"cd /usr/src/app && bash pyweb_outer.sh\"",
+            "entrypoint": "bash",
+            "image": "environment@36898f9e-456a-4259-a6d5-685bda2ba2cd",
+            "name": "PyWebIO",
+            "ports": [
+                8080
+            ],
+            "scope": [
+                "interactive",
+                "noninteractive"
+            ]
+        },
+        "meilisearch": {
+            "image": "getmeili/meilisearch:v0.24.0",
+            "name": "meilisearch",
+            "ports": [
+                7700
+            ],
+            "scope": [
+                "interactive",
+                "noninteractive"
+            ]
+        }
+    },
+    "settings": {
+        "auto_eviction": false,
+        "data_passing_memory_size": "1GB"
+    },
+    "steps": {
+        "44f62c40-b258-4213-a1a6-332da260baed": {
+            "environment": "b0bd58a5-5b71-4078-879c-57fcaa540579",
+            "file_path": "fetch-data.ipynb",
+            "incoming_connections": [],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    177,
+                    446
+                ]
+            },
+            "parameters": {
+                "all_pages": false,
+                "proxy_enabled": true,
+                "usernames": [
+                    "ricklamers"
+                ]
+            },
+            "title": "Fetch data",
+            "uuid": "44f62c40-b258-4213-a1a6-332da260baed"
+        },
+        "7e074084-5842-479e-995d-cc051027dde6": {
+            "environment": "b0bd58a5-5b71-4078-879c-57fcaa540579",
+            "file_path": "load-into-meili.ipynb",
+            "incoming_connections": [
+                "44f62c40-b258-4213-a1a6-332da260baed"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    477,
+                    446
+                ]
+            },
+            "parameters": {
+                "clear_db": true
+            },
+            "title": "Load into Meili",
+            "uuid": "7e074084-5842-479e-995d-cc051027dde6"
+        }
+    },
+    "uuid": "f41653f6-8b89-4a67-917f-905e38657f05",
+    "version": "1.0.0"
+}
